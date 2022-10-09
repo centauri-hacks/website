@@ -1,6 +1,6 @@
 import styles from "./date.module.css";
 
-export default function Date({ year, month, day }) {
+export default function PostDate({ year, month, day }) {
   return (
     <div className={styles.date}>
       <p className={styles.month}>{month}</p>
