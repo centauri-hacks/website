@@ -1,0 +1,12 @@
+:root {
+  --color-root: #20101b;
+  --color-bg: #32192e;
+  --color-overlay: #1a2e47;
+  --color-highlight: #2593d3;
+  --color-fg: #fff6ff;
+  --color-dimmed: #ced3dc;
+  --color-action: #f4b557;
+
+  /* card */
+  --color-card-bg: linear-gradient(100.66deg, #f4b557 0%, #2593d3 100%);
+}
