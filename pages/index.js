@@ -8,36 +8,33 @@ import Icon from "../components/icon.js";
 import Card from "../components/card.js";
 import Layout from "../components/layout.js";
 import Paragraph from "../components/paragraph.js";
-
-const date = {
-  day: "9",
-  month: "10",
-  year: "2022",
-};
+import Parallax from "../components/parallax.js";
+import { ParallaxProvider } from "react-scroll-parallax";
+import galaxy from "../styles/galaxy.module.css";
+import utils from "../styles/utils.module.css";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Layout title="Test 1234" author="BlueFalconHD" date={date}>
-        <Heading type="h1">Hello!</Heading>
-        <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum
-          integer enim neque volutpat. Eget magna fermentum iaculis eu non. Eu
-          sem integer vitae justo. Elementum sagittis vitae et leo duis ut.
-          Venenatis a condimentum vitae sapien pellentesque habitant morbi
-          tristique senectus. Augue eget arcu dictum varius duis at consectetur.
-          Scelerisque purus semper eget duis at tellus at urna. In dictum non
-          consectetur a erat. Faucibus a pellentesque sit amet porttitor eget
-          dolor. Elit at imperdiet dui accumsan. Auctor augue mauris augue neque
-          gravida in. Volutpat maecenas volutpat blandit aliquam etiam. Duis
-          convallis convallis tellus id interdum velit laoreet id. Mattis
-          pellentesque id nibh tortor id. Commodo odio aenean sed adipiscing
-          diam donec adipiscing. Platea dictumst quisque sagittis purus sit amet
-          volutpat consequat.
-        </Paragraph>
-      </Layout>
+      <div className={galaxy.container}>
+        <ParallaxProvider scrollAxis="vertical">
+          <Parallax speed="-30" classn={galaxy.nebula}>
+            <Image
+              src="https://media.discordapp.net/attachments/1028179635197976616/1028776622574293102/hyfZd0q.png?width=1282&height=1171"
+              alt="Nebula Galaxy Parallax Scroll"
+              width="500"
+              height="500"
+            />
+          </Parallax>
+          <Parallax speed="20" classn={galaxy.hero}>
+            <p>
+              Centuari <br /> Hackathon
+            </p>
+          </Parallax>
+        </ParallaxProvider>
+      </div>
+
+      <div className={utils.bottom}></div>
     </>
   );
 }

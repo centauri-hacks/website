@@ -1,0 +1,28 @@
+.container {
+  width: 100vw;
+  height: 1200px;
+  padding: 0;
+  margin: 0;
+
+  background: url("https://media.discordapp.net/attachments/1028179635197976616/1028777172854378496/eIC3Job.png?width=1170&height=1170");
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+}
+
+.nebula {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 500;
+}
+
+.hero {
+  z-index: 300;
+  font-family: var(--font-mono);
+  font-size: 7rem;
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  font-style: italic;
+  font-weight: bold;
+}
