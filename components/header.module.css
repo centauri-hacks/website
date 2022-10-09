@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 4rem;
+
+  background-color: var(--color-overlay);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-highlight);
+
+  z-index: 999;
+}
+
+.innerHeader {
+  width: 100%;
+
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.socialContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.7rem;
+  place-items: center;
+}

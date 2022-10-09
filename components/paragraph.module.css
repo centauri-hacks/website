@@ -1,0 +1,18 @@
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.inner {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-fg);
+}
