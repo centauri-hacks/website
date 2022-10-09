@@ -1,0 +1,12 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 55px;
+  gap: 10px;
+  background: var(--color-bg);
+  border: 5px solid var(--color-overlay);
+  border-radius: 15px;
+
+  width: 60%;
+}

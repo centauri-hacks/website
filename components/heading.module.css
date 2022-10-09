@@ -1,0 +1,60 @@
+.headContainer {
+  font-family: var(--font-serif);
+  color: var(--color-fg);
+}
+
+.h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.h1:before {
+  font-size: 30px;
+}
+
+.h2:before {
+  font-size: 25px;
+}
+
+.h3:before {
+  font-size: 20px;
+}
+
+.h4:before {
+  font-size: 15px;
+}
+
+.h5:before {
+  font-size: 10px;
+}
+
+.h1:before,
+.h2:before,
+.h3:before,
+.h4:before,
+.h5:before {
+  content: "#";
+  color: var(--color-dimmed);
+  font-weight: 700;
+  margin-right: 10px;
+}

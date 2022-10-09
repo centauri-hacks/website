@@ -6,8 +6,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-serif);
+  background-color: var(--color-root);
 }
 
 * {
   box-sizing: border-box;
+}
+
+p,
+a {
+  margin: 0;
+  padding: 0;
 }
