@@ -1,0 +1,17 @@
+.link {
+  font-size: 1em;
+  color: var(--color-highlight);
+  position: relative;
+  text-decoration: none !important;
+  z-index: 777;
+
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding: 2px;
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: var(--color-fg);
+  background-color: var(--color-highlight);
+}

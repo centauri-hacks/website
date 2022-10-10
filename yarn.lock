@@ -2211,6 +2211,11 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
+p@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/p/-/p-0.2.0.tgz#46a8e8a63beca00ebf6638248621e8a09cb24a7b"
+  integrity sha512-+FO3CEcP1no7VLm9widissk+aKCXjdx3kH59TUe8rJdGttZ0wbIPGKwW81g3H7aoIoUcl+iUrhODM1zfYE9/Zg==
+
 package-json-path@^1.0.0:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/package-json-path/-/package-json-path-1.0.9.tgz#6caa627239b7b7fdccd4dba1026d86634397efde"
