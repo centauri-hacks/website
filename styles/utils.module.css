@@ -1,5 +1,5 @@
 .bottom {
   width: 100vw;
   height: 1000px;
-  background-color: var(--color-bg);
+  background-color: var(--color-root);
 }

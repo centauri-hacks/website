@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "../components/link.js";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header.js";
 import Heading from "../components/heading.js";
@@ -34,7 +34,58 @@ export default function Home() {
         </ParallaxProvider>
       </div>
 
-      <div className={utils.bottom}></div>
+      <div className={utils.bottom}>
+        <Layout
+          title="Welcome to Centauri"
+          author="Centuari Hacks"
+          date={{ month: "10", day: "10", year: "2022" }}
+        >
+          <Heading type="h1">About Us</Heading>
+          <Paragraph>
+            Hello, world! We are Centauri Hacks, a team of developers who are
+            creating a hackathon. Some members of our team include:
+            <ul>
+              <li>
+                <Link hrefd="https://github.com/orgs/centauri-hacks/people/BlueFalconHD">
+                  BlueFalconHD (Web Developer)
+                </Link>
+              </li>
+              <li>
+                <Link hrefd="https://github.com/orgs/centauri-hacks/people/AJPapi">
+                  Alp (Designer)
+                </Link>
+              </li>
+              <li>
+                <li>
+                  <Link hrefd="https://github.com/orgs/centauri-hacks/people/Cdogo">
+                    CDogo
+                  </Link>
+                </li>
+                <li>
+                  <Link hrefd="https://github.com/orgs/centauri-hacks/people/dependra123">
+                    Dependra123
+                  </Link>
+                </li>
+                <li>
+                  <Link hrefd="https://github.com/orgs/centauri-hacks/people/Jack57832">
+                    Jack57832
+                  </Link>
+                </li>
+                <li>
+                  <Link hrefd="https://github.com/orgs/centauri-hacks/people/sir-sandwitch">
+                    Sir Sandwitch
+                  </Link>
+                </li>
+              </li>
+              <li>
+                <Link hrefd="https://github.com/orgs/centauri-hacks/people/">
+                  Many others...
+                </Link>
+              </li>
+            </ul>
+          </Paragraph>
+        </Layout>
+      </div>
     </>
   );
 }
