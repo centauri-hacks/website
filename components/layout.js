@@ -11,6 +11,7 @@ export default function Layout({ children, title, author, date }) {
       <Article>
         <Card type="regular">{title}</Card>
         <Details author={author} day={day} month={month} year={year} />
+        <div className={styles.sep}></div>
         {children}
       </Article>
     </div>
