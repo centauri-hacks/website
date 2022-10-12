@@ -1,0 +1,7 @@
+.highlighted {
+    color: var(--color-highlight) !important;
+}
+
+.highlightedb {
+    color: var(--color-highlight) !important;
+}
