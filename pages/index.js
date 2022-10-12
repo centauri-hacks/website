@@ -46,39 +46,39 @@ export default function Home() {
             creating a hackathon. Some members of our team include:
             <ul>
               <li>
-                <Link href="https://github.com/orgs/centauri-hacks/people/BlueFalconHD">
+                <Link href="https://github.com/BlueFalconHD">
                   BlueFalconHD (Web Developer)
                 </Link>
               </li>
               <li>
-                <Link href="https://github.com/orgs/centauri-hacks/people/AJPapi">
+                <Link href="https://github.com/AJPapi">
                   Alp (Designer)
                 </Link>
               </li>
               <li>
                 <li>
-                  <Link href="https://github.com/orgs/centauri-hacks/people/Cdogo">
+                  <Link href="https://github.com/Cdogo">
                     CDogo
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/orgs/centauri-hacks/people/dependra123">
+                  <Link href="https://github.com/dependra123">
                     Dependra123
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/orgs/centauri-hacks/people/Jack57832">
+                  <Link href="https://github.com/Jack57832">
                     Jack57832
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/orgs/centauri-hacks/people/sir-sandwitch">
+                  <Link href="https://github.com/sir-sandwitch">
                     Sir Sandwitch
                   </Link>
                 </li>
               </li>
               <li>
-                <Link href="https://github.com/orgs/centauri-hacks/people/">
+                <Link href="https://github.com/">
                   Many others...
                 </Link>
               </li>
