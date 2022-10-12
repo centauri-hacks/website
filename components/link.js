@@ -1,17 +1,21 @@
 import NextLink from "next/link";
 import styles from "./link.module.css";
 
-export default function Link({ children, hrefd, classd }) {
-  if (hrefd === undefined) {
-    hrefd = "#";
+export default function Link({ children, href, smol,...props }) {
+  console.log(children, href)
+  let tempClass = styles.link
+  if (smol === true) {
+    tempClass = styles.smol
   }
+
   const el = (
-    <NextLink href={hrefd} passHref>
-      <a className={`${styles.link} ${classd}`}>{children}</a>
+    <NextLink href={`${href}`} passHref>
+      <a className={tempClass} href={`${href}`}>
+        {children}
+      </a>
     </NextLink>
   );
 
-  console.log(el);
-
+  console.log(el)
   return el;
 }
