@@ -7,7 +7,7 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.innerHeader}>
         <Link classd={`${styles.logo}`} href="/">
-          Centauri Hackathon
+          Centauri
         </Link>
         <div className={styles.socialContainer}>
           <Link href="countdown">Countdown</Link>

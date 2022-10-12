@@ -4,15 +4,15 @@
   padding: 0;
   margin: 0;
 
-  background: url("https://media.discordapp.net/attachments/1028179635197976616/1028777172854378496/eIC3Job.png?width=1170&height=1170");
+  background: url("/bg.png");
   background-repeat: no-repeat;
   background-size: 100vw 100%;
 }
 
 .nebula {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 10%;
+  left: 10%;
   z-index: 500;
 }
 
@@ -21,8 +21,51 @@
   font-family: var(--font-mono);
   font-size: 7rem;
   position: absolute;
-  top: 55%;
-  left: 55%;
+  top: 50%;
+  left: 40%;
   font-style: italic;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* laptop */
+}
+
+
+@media only screen and (max-width: 1199px) {
+  /* phone */
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    background: url("/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .nebula {
+    z-index: 500;
+    position:initial !important;
+    top: unset !important;
+    left: unset !important;
+  }
+
+  .hero {
+    z-index: 501;
+    font-family: var(--font-mono);
+    font-size: 3rem;
+    position:initial !important;
+    top: unset !important;
+    left: unset !important;
+    font-style: italic;
+    font-weight: bold;
+  }
 }

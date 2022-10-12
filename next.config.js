@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ["media.discordapp.net"],
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 module.exports = nextConfig;

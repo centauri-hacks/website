@@ -37,3 +37,13 @@
   grid-gap: 0.7rem;
   place-items: center;
 }
+
+@media only screen and (max-width: 1199px) {
+  /* phone */
+  .innerHeader {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+}
+

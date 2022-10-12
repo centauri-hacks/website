@@ -20,7 +20,7 @@ export default function Home() {
         <ParallaxProvider scrollAxis="vertical">
           <Parallax speed="-30" classn={galaxy.nebula}>
             <Image
-              src="https://media.discordapp.net/attachments/1028179635197976616/1028776622574293102/hyfZd0q.png?width=1282&height=1171"
+              src="/nebula.webp"
               alt="Nebula Galaxy Parallax Scroll"
               width="500"
               height="500"
