@@ -12,7 +12,9 @@ export default function Layout({ children, title, author, date }) {
         <Card type="regular">{title}</Card>
         <Details author={author} day={day} month={month} year={year} />
         <div className={styles.sep}></div>
-        {children}
+        <div className={styles.content}>
+          {children}
+        </div>
       </Article>
     </div>
   );
