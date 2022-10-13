@@ -15,7 +15,5 @@ export default function Link({ children, href, smol,...props }) {
       </a>
     </NextLink>
   );
-
-  console.log(el)
   return el;
 }

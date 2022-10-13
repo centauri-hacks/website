@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: var(--font-serif);
   background-color: var(--color-root);
-  overflow: none;
+  overflow-x: hidden;
 }
 
 * {
