@@ -1,15 +1,12 @@
-import Head from "next/head";
 import Image from "next/image";
+
 import Link from "../components/link.js";
-import styles from "../styles/Home.module.css";
-import Header from "../components/header.js";
 import Heading from "../components/heading.js";
-import Icon from "../components/icon.js";
-import Card from "../components/card.js";
 import Layout from "../components/layout.js";
 import Paragraph from "../components/paragraph.js";
 import Parallax from "../components/parallax.js";
 import { ParallaxProvider } from "react-scroll-parallax";
+
 import galaxy from "../styles/galaxy.module.css";
 import utils from "../styles/utils.module.css";
 
