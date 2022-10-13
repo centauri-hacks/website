@@ -2,33 +2,34 @@
   font-size: 1em;
   color: var(--color-highlight);
   position: relative;
-  text-decoration: none !important;
+  text-decoration: none;
   z-index: 777;
 
   margin-left: 0.5em;
   margin-right: 0.5em;
   padding: 2px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .link:hover {
   color: var(--color-fg);
-  background-color: var(--color-highlight);
+  border-bottom: 4px solid var(--color-highlight);
 }
 
 .smol {
   font-size: 1em;
   color: var(--color-highlight);
   position: relative;
-  text-decoration: none !important;
+  text-decoration: none;
   z-index: 777;
   margin-left: 0px;
   margin-right: 0px;
   padding: 2px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .smol:hover {
   color: var(--color-fg);
-  background-color: var(--color-highlight);
+  
+  border-bottom: 4px solid var(--color-highlight);
 }
