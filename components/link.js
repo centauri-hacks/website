@@ -1,7 +1,7 @@
 import NextLink from "next/link";
 import styles from "./link.module.css";
 
-export default function Link({ children, href, smol,...props }) {
+export default function Link({ children, href, aria, smol,...props }) {
   console.log(children, href)
   let tempClass = styles.link
   if (smol === true) {
@@ -10,7 +10,7 @@ export default function Link({ children, href, smol,...props }) {
 
   const el = (
     <NextLink href={`${href}`} passHref>
-      <a className={tempClass} href={`${href}`}>
+      <a className={tempClass} href={`${href}`} aria-label = {aria}>
         {children}
       </a>
     </NextLink>

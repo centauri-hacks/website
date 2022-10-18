@@ -1,0 +1,100 @@
+#homeImage{
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+.AboutUs{
+    padding: 25px 100px;
+}
+#CardHolder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+#imageHeader{
+    text-align: center;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+div.card{
+    max-width: min(600px, 90vw);
+    max-height: 200px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 20px;
+}
+h1.card,
+h5.card{
+    margin: 0;
+    padding: 0;
+}
+h5.card{
+    opacity: 0.5;
+}
+p.card{
+    padding-top:5px;
+}
+img.card{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+}
+@keyframes cloudfly {
+    0% {
+        left: -5vw;
+    }
+    100%{
+        left: 105vw;
+    }
+}
+.cloud:nth-child(1){
+    position: absolute;
+    top: calc(700px - 1 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(2){
+    position: absolute;
+    top: calc(700px - 2 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(3){
+    position: absolute;
+    top: calc(700px - 3 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(4){
+    position: absolute;
+    top: calc(700px - 4 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(5){
+    position: absolute;
+    top: calc(700px - 5 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+@media screen and (max-width: 600px){
+    #CardHolder{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .AboutUs{
+        padding: 25px 10px;
+    }
+    div.card{
+        max-height: none;
+        display: grid;
+        grid-template-columns: none;
+        column-gap: none;
+    }
+}
