@@ -6,14 +6,14 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.innerHeader}>
-        <Link classd={`${styles.logo}`} href="/">
+        <Link classd={`${styles.logo}`} href="/" aria = 'home page'>
           Centauri
         </Link>
         <div className={styles.socialContainer}>
-          <Link href="about-us">About Us</Link>
-          <Link href="countdown">Countdown</Link>
-          <Link href="blog">Blog</Link>
-          <Link href="https://github.com/centauri-hacks">
+          <Link href="about-us" aria = 'About Us'>About Us</Link>
+          <Link href="countdown" aria = 'Countdown'>Countdown</Link>
+          <Link href="blog" aria = 'Blog'>Blog</Link>
+          <Link href="https://github.com/centauri-hacks" aria = 'our github'>
             <Icon
               iconSet="bootstrap"
               iconName="Github"
