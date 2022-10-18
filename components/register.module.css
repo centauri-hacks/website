@@ -1,0 +1,7 @@
+#button{
+    text-decoration: none;
+    padding: 1em;
+    background-color: blue;
+    border-radius: 5px;
+    color: inherit;
+}
