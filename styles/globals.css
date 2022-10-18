@@ -19,3 +19,22 @@ a {
   margin: 0;
   padding: 0;
 }
+/* width */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
