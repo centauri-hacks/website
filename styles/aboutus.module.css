@@ -6,9 +6,8 @@
     align-items: center;
     justify-content: center;
 }
-#AboutUs{
+.AboutUs{
     padding: 25px 100px;
-    margin-bottom: 100px;
 }
 #CardHolder{
     display: grid;
@@ -45,13 +44,51 @@ img.card{
     background-color: red;
     border-radius: 50%;
 }
+@keyframes cloudfly {
+    0% {
+        left: -5vw;
+    }
+    100%{
+        left: 105vw;
+    }
+}
+.cloud:nth-child(1){
+    position: absolute;
+    top: calc(700px - 1 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(2){
+    position: absolute;
+    top: calc(700px - 2 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(3){
+    position: absolute;
+    top: calc(700px - 3 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(4){
+    position: absolute;
+    top: calc(700px - 4 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
+.cloud:nth-child(5){
+    position: absolute;
+    top: calc(700px - 5 * 10);
+    left: 0;
+    animation: 5s ease-in-out 1s cloudfly infinite;
+}
 @media screen and (max-width: 600px){
     #CardHolder{
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
-    #AboutUs{
+    .AboutUs{
         padding: 25px 10px;
     }
     div.card{
