@@ -10,7 +10,7 @@ export default function Header() {
           Centauri
         </Link>
         <div className={styles.socialContainer}>
-          <Link href="about-us" aria = 'About Us'>About Us</Link>
+          <Link href="aboutus" aria = 'About Us'>About Us</Link>
           <Link href="countdown" aria = 'Countdown'>Countdown</Link>
           <Link href="blog" aria = 'Blog'>Blog</Link>
           <Link href="https://github.com/centauri-hacks" aria = 'our github'>

@@ -29,7 +29,7 @@ const Card = ({title, name, description}) => {
     return(
         <>
         <div className = {styles.card}>
-            <img className = {styles.card}/>
+            <div className = {styles.card}/>
             <div>
                 <h5 className = {styles.card}>{title ? title : 'Web Developer'}</h5>
                 <h1 className = {styles.card}>{name ? name : 'John Smith'}</h1>
