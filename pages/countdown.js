@@ -1,14 +1,26 @@
 import Layout from "../components/layout_countdown"
 
-export default function Home() {
+import Countdown from 'react-countdown';
 
-    return (
-      <Layout
-        title="How long until Centauri Hackathon?"
-        author="Centauri Hacks"
-        date={{ day: 69, month: 69, year: 6969 }}
-      >
-        <p>Here is a plcae for potential future content regarding the preparation for the Hackathon.</p>
-      </Layout>
-    );
+import styles from "../styles/Home.module.css";
+
+export default function Home() {
+  let hackathonDay = new Date("December 25, 2022 23:15:00");
+
+  const CustomCountdown = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <h2 className = {styles.countdown}>Let the hacking begin!</h2>;
+    } else {
+      // Render a countdown
+      return (
+      <div className={styles.content}>
+        <h2 className = {styles.countdown}>Countdown<br/>Days: {days} <br/>Hours:{hours} <br/>Minutes:{minutes} <br/>Seconds:{seconds}</h2>
+      </div>
+        );
+    }
+  }
+  return (
+    <Countdown date={hackathonDay} renderer={CustomCountdown} />
+  );
 }

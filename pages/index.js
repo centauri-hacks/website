@@ -4,26 +4,8 @@ import Parallax from "../components/parallax.js";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Register from "../components/register.js"
 
-import Countdown from 'react-countdown';
-
 import styles from "../styles/Home.module.css";
-const CustomCountdown = ({ days, hours, minutes, seconds, completed }) => {
-  if (completed) {
-    // Render a completed state
-    return <h1>Let the hacking begin!</h1>;
-  } else {
-    // Render a countdown
-    return (
-    <div className={styles.content}>
-      <h1 className = {styles.countdown}>Countdown</h1>
-      <h2 className = {styles.countdown}>Days: {days} <br/>Hours :{hours} <br/>Minutes:{minutes} <br/>Seconds:{seconds}</h2>
-    </div>
-      );
-  }
-}
 export default function Home() {
-  let hackathonDay = new Date("December 25, 2022 23:15:00");
-  console.log(hackathonDay.getTime() - Date.now())
   return (
     <>
       <div className={styles.container}>
@@ -43,7 +25,21 @@ export default function Home() {
           </Parallax>
         </ParallaxProvider>
       </div>
-
+      <div className={styles.content}>
+        <h1 style = {{textAlign:'center'}}>Sponsors</h1>
+        <h5 style = {{textAlign:'center'}}>Want to become a sponsor? Email us at centauri.hacks@gmail.com</h5>
+        <div className = {styles.sponsorContanier}>
+          <img
+            className={styles.sponsor}
+            src= "/google-01.svg"/>
+          <img
+            className={styles.sponsor}
+            src= "/google-01.svg"/>
+          <img
+            className={styles.sponsor}
+            src= "/google-01.svg"/>
+        </div>
+      </div>
       <div className={styles.content}>
         <h1>
           Our Mission
@@ -55,7 +51,6 @@ export default function Home() {
         </p>
         <Register/>
       </div>
-      <Countdown date={hackathonDay} renderer={CustomCountdown} />
       <div className = {styles.content}>
         <form>
           <label>Name:</label><br/>
