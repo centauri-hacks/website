@@ -1,5 +1,4 @@
-import Countdown from "../components/countdown";
-import Layout from "../components/layout"
+import Layout from "../components/layout_countdown"
 
 export default function Home() {
 
@@ -9,7 +8,7 @@ export default function Home() {
         author="Centauri Hacks"
         date={{ day: 69, month: 69, year: 6969 }}
       >
-        <Countdown />
+        <p>Here is a plcae for potential future content regarding the preparation for the Hackathon.</p>
       </Layout>
     );
 }
